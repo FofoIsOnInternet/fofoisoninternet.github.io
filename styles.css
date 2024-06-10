@@ -194,18 +194,19 @@ section#about [data-key="aboutMe-content"]{
     justify-content: center;
 }
 
-.project-skills-container{
+.tools-container{
     margin-bottom: 20px;
     display: flex;
     flex-basis: 40%;
     gap: 10px;
     padding: 10px;
-    min-width: 300px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     justify-content: start;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .skills-container h2 {
@@ -219,7 +220,7 @@ section#about [data-key="aboutMe-content"]{
 
 /* Individual skill boxes style */
 
-.skill {
+.skill, .tool{
     position: relative;
     width: 70px;
     height: 70px;
@@ -236,8 +237,10 @@ section#about [data-key="aboutMe-content"]{
     justify-content: center;
     align-items: center;
 }
-
-.skill img {
+.tool{
+    flex: 0 0 auto;
+}
+.skill img, .tool img {
     width: 56px;
     height: 56px;
     object-fit: contain;
@@ -246,7 +249,7 @@ section#about [data-key="aboutMe-content"]{
     z-index: 1;
 }
 
-.skill span {
+.skill span, .tool span {
     position: absolute;
     bottom: 10px;
     left: 0;
@@ -263,16 +266,16 @@ section#about [data-key="aboutMe-content"]{
 
 /* Individual skill boxes animations */
 
-.skill:hover {
+.skill:hover, .tool:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-.skill:hover img {
+.skill:hover img, .tool:hover img{
     transform: translateY(-10px);
 }
 
-.skill:hover span {
+.skill:hover span, .tool:hover span {
     bottom: 0;
     opacity: 1;
 }
@@ -376,7 +379,6 @@ footer {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     border-radius: 15px;
     overflow-x: auto;
-    
     overflow-y: hidden;
     display: flex;
     flex-direction: row;
