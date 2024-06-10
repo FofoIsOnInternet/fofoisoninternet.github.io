@@ -1,0 +1,449 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+/* Header Name & second name*/
+
+header span{
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 2px;
+    position: absolute;
+    top:16px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Change language button */
+
+#language-switcher{
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    top:16px;
+    right: 0;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* navigation style */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+/* navigation animations */
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0; /* Initially width is 0 */
+    height: 2px;
+    background-color: white; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth transition for the width */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Width expands to 100% on hover */
+}
+
+/* Default section style */
+
+section {
+    padding: 80px 20px 20px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+/* Sections titles */
+
+h1 {
+    border-bottom: 2px solid #333;
+    padding: 20px 0 10px 0;
+    position: sticky;
+    top: 39px;
+    background-color: white;
+    z-index: 8;
+    letter-spacing: 1px;
+}
+
+
+/* About me section */
+
+section#about div{
+    display: flex;
+    flex-direction: row;
+}
+section#about > div div:last-child{
+    flex-basis: 30%;
+}
+section#about > div div:first-child{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+section#about img{
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
+    min-height: 400px;
+    max-width: 400px;
+    max-height: 600px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    justify-self: center;
+    align-self: center;
+}
+
+section#about [data-key="aboutMe-content"]{
+    font-size: large;
+    text-align: justify;
+    line-height: 25px;
+    text-indent: 50px;
+}
+
+
+@media screen and (max-width: 800px) {
+    section#about div{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    header span{
+        position: initial;
+        width: fit-content;
+    }
+    h1{
+        top: 85px;
+    }
+}
+
+
+/* Skills section */
+
+#skills > div{
+    display: flex;
+    gap:10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Containers with title (h2) to display many skills */
+
+.skills-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 40%;
+    gap: 10px;
+    padding: 10px;
+    min-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    justify-content: center;
+}
+
+.project-skills-container{
+    margin-bottom: 20px;
+    display: flex;
+    flex-basis: 40%;
+    gap: 10px;
+    padding: 10px;
+    min-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    justify-content: start;
+}
+
+.skills-container h2 {
+    font-size: 1.5em;
+    color: #333;
+    width: 100%; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* Individual skill boxes style */
+
+.skill {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.skill span {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 0;
+    font-size: 0.8em;
+    color: #333;
+    transition: bottom 0.3s ease;
+    z-index: 0;
+    opacity: 0;
+}
+
+
+/* Individual skill boxes animations */
+
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.skill:hover img {
+    transform: translateY(-10px);
+}
+
+.skill:hover span {
+    bottom: 0;
+    opacity: 1;
+}
+
+
+/* Project containers style */
+
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h2 {
+    margin-top: 0;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+
+/* The part of projects that is hidden by default
+   Used to display additional information about a project
+*/
+
+.more-text-closed, .more-text-opened {
+    padding-left: 20px;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.more-text-opened {
+    max-height: fit-content;
+    opacity: 1;
+}
+
+
+/* h3 are used in projects as sub-sections in additional informations*/
+
+h3 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: #333;
+    font-size: 1.2em;
+    border-left: 4px solid #007BFF;
+    padding-left: 10px;
+}
+
+h3 + div {
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* 'Read more' link styled buttons on projects */
+
+.read-more {
+    color: #007BFF;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* horizontal one line container for numerous small images */
+
+.image-container{
+    width: 95%;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    overflow-x: auto;
+    
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.image-container figure{
+    width:80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 0 0 auto;
+}
+
+.image-container img{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    margin: 10px 0 10px 0;
+}
+
+.image-container figcaption{
+    display: none;
+}
+
+
+/* Full screen image shown on click (result section) */
+
+#img-close-up figure{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#img-close-up img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#img-close-up figcaption {
+    display: block; 
+    text-align: center;
+    margin-top: 10px; 
+    font-size: 20px;
+    max-width: 90%;
+    background-color: #fff;
+    padding: 0 3px 0 3px;
+    line-height: 18px;
+    border: #fff solid 2px;
+    border-radius: 2px;
+}
+
+#img-close-up{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    background-color: rgba(161, 161, 161, 0.46);
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    visibility: hidden;
+}

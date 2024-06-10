@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Full-screen image holder -->
+    <div id="img-close-up" onclick="hidePicture()">
+        <figure>
+            <img>
+            <figcaption></figcaption>
+        </figure>
+    </div>
+    <!-- Header -->
+    <header>
+        <span>Faustin MONTANT</span>
+        <nav>
+            <ul>
+                <li><a href="#about" data-key="aboutMe-title">About Me</a></li>
+                <li><a href="#skills" data-key="skills-title">Skills</a></li>
+                <li><a href="#projects" data-key="projects-title">Projects</a></li>
+                <li><a href="#contact" data-key="contact-title">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="language-switcher" data-key="lang">English</button>
+    </header>
+    <!-- About me -->
+    <section id="about">
+        <h1 data-key="aboutMe-title">About Me</h1>
+        <div>
+            <div>
+                <p data-key="aboutMe-content">Hi, I am a student in IT learning to be a developer. [Add more about yourself here]</p>
+            </div>
+            <div>
+                <img src="Images/photo identitВ.jpg" alt="Photo d'identité">
+            </div>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills">
+        <h1 data-key="skills-title">Skills</h1>
+        <div>
+            <!-- Web Development -->
+            <div class="skills-container">
+                <h2 data-key="skill-1-title">Web Development</h2>
+                <div class="skill">
+                    <img src="Images/HTML5.png">
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/CSS3.png">
+                    <span>CSS</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/JS.png">
+                    <span>Java Script</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/PHP.png">
+                    <span>PHP</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/sql.png">
+                    <span>SQL</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/MD.png">
+                    <span>Markdown</span>
+                </div>
+            </div>
+            <!-- Programming Languages -->
+            <div class="skills-container">
+                <h2 data-key="skill-2-title">Programming Languages</h2>
+                <div class="skill">
+                    <img src="Images/java.webp">
+                    <span>Java</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/Python.png">
+                    <span>Python</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/Csharp.png">
+                    <span>C Sharp</span>
+                </div>
+            </div>
+            <!-- Computer Science Concepts -->
+            <div class="skills-container">
+                <h2 data-key="skill-3-title">Computer Science Concepts</h2>
+                <div class="skill">
+                    <img src="Images/graph.png">
+                    <span data-key="skill-1">Graphs</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/algo.png">
+                    <span data-key="skill-2">Algorithmic</span>
+                </div>
+            </div>
+            <!-- Systems and Management -->
+            <div class="skills-container">
+                <h2 data-key="skill-4-title">Systems and Management</h2>
+                <div class="skill">
+                    <img src="Images/cs.png">
+                    <span data-key="skill-3">Computer systems</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/net.png">
+                    <span data-key="skill-4">Networking</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/git.png">
+                    <span>Git</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/hands.png">
+                    <span data-key="skill-5">Project Management</span>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <!-- Projects -->
+    <section id="projects">
+        <h1 data-key="projects-title">Projects</h1>
+        <!--   Projet 1   -->
+        <div class="project">
+            <h2 data-key="project-1-title">Programmation d'une centrale domotique</h2>
+            <p class="description" data-key="project-1-description">
+            </p>
+            <div class="more-text-closed">
+                <h3 data-key="projects-specifications-title">Specifications</h3>
+                <ul>
+                    <li data-key="project-1-spec-1">Gestion de données météo</li>
+                    <li data-key="project-1-spec-2">Affichage de données dans un histogramme</li>
+                    <li data-key="project-1-spec-3">Gestion d'une chaudière</li>
+                    <li data-key="project-1-spec-4">Simulation d’un écran LCD par la console en mode texte</li>
+                </ul>
+                <h3 data-key="projects-tools-title">Tools</h3>
+                <div class="project-skills-container">
+                    <div class="skill">
+                        <img src="Images/java.webp">
+                        <span>Java</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/netbeans.png">
+                        <span>NetBeans IDE</span>
+                    </div>
+                </div>
+                <h3 data-key="projects-skills-title">Skills</h3>
+                <ul>
+                    <li data-key="project-1-skill-1">Programmation dans un langage fortement typé</li>
+                    <li data-key="project-1-skill-2">Qualité de code et documentation</li>
+                    <li data-key="project-1-skill-3">Gestion et exploitation de données</li>
+                    <li data-key="project-1-skill-4">Création d’une interface texte interactive</li>
+                </ul>
+                <h3 data-key="projects-result-title">Result</h3>
+                <div class="image-container">
+                    <figure onclick="displayPicture(event)"><img src="Images/odomo1.png"><figcaption data-key="project-1-img-1">Définition d'un créneau horaire pour le chauffage</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/odomo2.png"><figcaption data-key="project-1-img-2">Consultation du pluviomètre</figcaption></figure>
+                </div>
+            </div>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+        </div>
+        <!--   Projet 2    -->
+        <div class="project">
+            <h2 data-key="project-2-title">Développement d’un jeu de plateau</h2>
+            <p class="description" data-key="project-2-description">
+            </p>
+            <div class="more-text-closed">
+                <h3 data-key="projects-specifications-title">Specifications</h3>
+                <ul>
+                    <li data-key="project-2-spec-1">Implémentation des règles d’un jeu de plateau</li>
+                    <li data-key="project-2-spec-2">Programmation d’une “IA” capable de jouer une stratégie simple</li>
+                </ul>
+                <h3 data-key="projects-tools-title">Tools</h3>
+                <div class="project-skills-container">
+                    <div class="skill">
+                        <img src="Images/java.webp">
+                        <span>Java</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/netbeans.png">
+                        <span>NetBeans IDE</span>
+                    </div>
+                </div>
+                <h3 data-key="projects-skills-title">Skills</h3>
+                <ul>
+                    <li data-key="project-2-skill-1">Programmation dans un langage fortement typé</li>
+                    <li data-key="project-2-skill-2">Qualité de code et documentation</li>
+                    <li data-key="project-2-skill-3">Algorithmique</li>
+                </ul>
+                <h3 data-key="projects-result-title">Result</h3>
+                <div class="image-container">
+                    <figure onclick="displayPicture(event)"><img src="Images/towa.png"><figcaption data-key="project-2-img-1">Une partie de towa</figcaption></figure>
+                </div>
+            </div>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+        </div>
+        <!--   Projet 3    -->
+        <div class="project">
+            <h2 data-key="project-3-title">Développement d’un jeu de carte intéractif</h2>
+            <p class="description" data-key="project-3-description">
+            </p>
+            <div class="more-text-closed">
+                <h3 data-key="projects-specifications-title">Specifications</h3>
+                <ul>
+                    <li data-key="project-3-spec-1">Implementation d’un jeu de carte à deux joueurs</li>
+                    <li data-key="project-3-spec-2">Programmation d’une interface homme-machine</li>
+                </ul>
+                <h3 data-key="projects-tools-title">Tools</h3>
+                <div class="project-skills-container">
+                    <div class="skill">
+                        <img src="Images/Csharp.png">
+                        <span>Windows Forms C#</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/visualstudio.png">
+                        <span>Visual Studio</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/git.png">
+                        <span>Git</span>
+                    </div>  
+                </div>
+                <h3 data-key="projects-skills-title">Skills</h3>
+                    <ul>
+                        <li data-key="project-3-skill-1">Utilisation de concepts de programmation orienté objet avancé</li>
+                        <li data-key="project-3-skill-2">Utilisation de git</li>
+                    </ul>
+                <h3 data-key="projects-result-title">Result</h3>
+                <div class="image-container">
+                    <figure onclick="displayPicture(event)"><img src="Images/cardgame.png"><figcaption data-key="project-3-img-1">L'interface d'une partie de University deck build duel</figcaption></figure>
+                </div>
+            </div>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+        </div>
+        <!--    Projet 4   -->
+        <div class="project">
+            <h2 data-key="project-4-title">Installation d’un poste informatique de développement</h2>
+            <p class="description" data-key="project-4-description">
+            </p>
+            <div class="more-text-closed">
+                <h3 data-key="projects-specifications-title">Specifications</h3>
+                <ul>
+                    <li data-key="project-4-spec-1">Installation et configuration d’une machine virtuelle</li>
+                    <li data-key="project-4-spec-2">Déploiement d’outils de développement informatique professionel</li>
+                    <li data-key="project-4-spec-3">Rédaction d’un rapport d’installation détaillé</li>
+                </ul>
+                <h3 data-key="projects-tools-title">Tools</h3>
+                <div class="project-skills-container">
+                    <div class="skill">
+                        <img src="Images/debian.png">
+                        <span>Debian</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/lxde.png">
+                        <span>LXDE</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/vmware.png">
+                        <span>VMware Player</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/doc.png">
+                        <span>Google Doc</span>
+                    </div>
+                </div>
+                <h3 data-key="projects-skills-title">Skills</h3>
+                <ul>
+                    <li data-key="project-4-skill-1">Mise en place et paramétrage d’une machine virtuelle</li>
+                    <li data-key="project-4-skill-2">Configuration d’utilisateurs</li>
+                    <li data-key="project-4-skill-3">Installation de logiciels et d’outils informatique</li>
+                    <li data-key="project-4-skill-4">Rédaction</li>
+                </ul>
+                <h3 data-key="projects-result-title">Result</h3>
+                <div class="image-container">
+                    <figure onclick="displayPicture(event)"><img src="Images/vmsommaire.png"><figcaption data-key="project-4-img-1">Le sommaire du rapport</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/vmresult.png"><figcaption></figcaption></figure>
+                </div>
+            </div>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+        </div>
+        <!--   Projet 5    -->
+        <div class="project">
+            <h2 data-key="project-5-title">Installation de services réseaux</h2>
+            <p class="description" data-key="project-5-description">
+            </p>
+            <div class="more-text-closed">
+                <h3 data-key="projects-specifications-title">Specifications</h3>
+                <ul>
+                    <li data-key="project-5-spec-1">Configuration d’un réseau composé de deux sous-réseaux</li>
+                    <li data-key="project-5-spec-2">Installation d’un serveur de fichiers cloud</li>
+                    <li data-key="project-5-spec-3">Réalisation d’un tutoriel</li>
+                </ul>
+                <h3 data-key="projects-tools-title">Tools</h3>
+                <div class="project-skills-container">
+                    <div class="skill">
+                        <img src="Images/net.png">
+                        <span data-key="skill-6">Émulateur réseau</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/debian.png">
+                        <span>Debian</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/nextcloud.png">
+                        <span>NextCloud</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/MD.png">
+                        <span>Markdown</span>
+                    </div>
+                </div>
+                <h3 data-key="projects-skills-title">Skills</h3>
+                <ul>
+                    <li data-key="project-5-skill-1">Utilisation de gestionnaires de paquets</li>
+                    <li data-key="project-5-skill-2">Adressage ip</li>
+                    <li data-key="project-5-skill-3">Configuration d’interfaces réseau</li>
+                    <li data-key="project-5-skill-4">Appropriation d’une application</li>
+                    <li data-key="project-5-skill-5">Installation, configuration  et paramétrage d’un logiciel</li>
+                    <li data-key="project-5-skill-6">Pédagogie</li>
+                </ul>
+                <h3 data-key="projects-result-title">Result</h3>
+                <div class="image-container">
+                    <figure onclick="displayPicture(event)"><img src="Images/network.png"><figcaption data-key="project-5-img-1">Le plan du réseau configuré</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/reseausommaire.png"><figcaption data-key="project-5-img-2">Le sommaire du tutoriel en Markdown</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/extraitreseau1.png"><figcaption data-key="project-5-img-3">Une capture d'écran réalisé pour guider l'utilisateur dans le tutoriel</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/extraitreseau2.png"><figcaption data-key="project-5-img-4">Un extrait du tutoriel écrit en anglais</figcaption></figure>
+                </div>
+            </div>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+        </div>
+        <!--   Projet 6    -->
+        <div class="project">
+            <h2 data-key="project-6-title">Création d’une base de données</h2>
+            <p class="description" data-key="project-6-description">
+            </p>
+            <div class="more-text-closed">
+                <h3 data-key="projects-specifications-title">Specifications</h3>
+                <ul>
+                    <li data-key="project-6-spec-1">Réalisation d’une base de données en fonction d’un cahier des charges</li>
+                </ul>
+                <h3 data-key="projects-tools-title">Tools</h3>
+                <div class="project-skills-container">
+                    <div class="skill">
+                        <img src="Images/sql.png">
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/windesign.png">
+                        <span>Win'design</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/mcsql.png">
+                        <span>Microsoft SQL server management</span>
+                    </div>
+                </div>
+                <h3 data-key="projects-skills-title">Skills</h3>
+                <ul>
+                    <li data-key="project-6-skill-1">Etude d’un besoin client</li>
+                    <li data-key="project-6-skill-2">Realisation de MCD et MLD pertinents (ACSI)</li>
+                    <li data-key="project-6-skill-3">Ecriture de scripts de remplissage</li>
+                    <li data-key="project-6-skill-4">Maitrise des requêtes et sous-requêtes sql et du LDD</li>
+                    <li data-key="project-6-skill-5">Gestion des privilèges utilisateur</li>
+                </ul>
+                <h3 data-key="projects-result-title">Result</h3>
+                <div class="image-container">
+                    <figure onclick="displayPicture(event)"><img src="Images/mcd.png"><figcaption data-key="project-6-img-1">Le MCD de la base de données</figcaption></figure>
+                </div>
+            </div>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+        </div>
+        <!--   Projet 7    -->
+        <div class="project">
+            <h2 data-key="project-7-title">Programmation d’un site web responsive</h2>
+            <p class="description" data-key="project-7-description">
+            </p>
+            <div class="more-text-closed">
+                <h3 data-key="projects-specifications-title">Specifications</h3>
+                <ul>
+                    <li data-key="project-7-spec-1">Création d’une entreprise répondant à un besoin (imaginaire)</li>
+                    <li data-key="project-7-spec-2">Réalisation de maquettes pour le site web de cette entreprise</li>
+                    <li data-key="project-7-spec-3">Réalisation de personnas pour cette entreprise</li>
+                    <li data-key="project-7-spec-4">Programmation des principales pages du site web</li>
+                </ul>
+                <h3 data-key="projects-tools-title">Tools</h3>
+                <div class="project-skills-container">
+                    <div class="skill">
+                        <img src="Images/HTML5.png">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/CSS3.png">
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/JS.png">
+                        <span>Java Script</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/balsamiq.png">
+                        <span data-key="skill-7">Outil de Maquettage</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/cssflex.png">
+                        <span>CSS Flex</span>
+                    </div>
+                </div>
+                <h3 data-key="projects-skills-title">Skills</h3>
+                <ul>
+                    <li data-key="project-7-skill-1">Programmation web</li>
+                    <li>UX design</li>
+                    <li data-key="project-7-skill-2">Maquettage</li>
+                    <li>Imagination</li>
+                </ul>
+                <h3 data-key="projects-result-title">Result</h3>
+                <div class="image-container">
+                    <figure onclick="displayPicture(event)"><img src="Images/formulaire.png"><figcaption data-key="project-7-img-1">La maquette d'un formulaire</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/hmbacceuil.png"><figcaption data-key="project-7-img-2">La page d'acceuil</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/hmbformulaire.png"><figcaption data-key="project-7-img-3">Un formulaire de contact du site</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/hmb404.png"><figcaption data-key="project-7-img-4">La page 404 du site</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/hmbresponsie.png"><figcaption data-key="project-7-img-5">La version mobile du site web</figcaption></figure>
+                </div>
+            </div>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+        </div>
+        <!--   Project 8    -->
+        <div class="project">
+            <h2 data-key="project-8-title">Développement d’une application web intéractive</h2>
+            <p class="description" data-key="project-8-description">
+            </p>
+            <div class="more-text-closed">
+                <h3 data-key="projects-specifications-title">Specifications</h3>
+                <ul>
+                    <li data-key="project-8-spec-1">Implémentation d’un jeu similaire à “r/place”</li>
+                    <li data-key="project-8-spec-2">Création d’une IHM</li>
+                    <li data-key="project-8-spec-3">Utilisation d’une API</li>
+                </ul>
+                <h3 data-key="projects-tools-title">Tools</h3>
+                <div class="project-skills-container">
+                    <div class="skill">
+                        <img src="Images/HTML5.png">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/CSS3.png">
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/JS.png">
+                        <span>Java Script</span>
+                    </div>
+                    <div class="skill">
+                        <img src="Images/apidoc.png">
+                        <span>API Doc</span>
+                    </div>
+                </div>
+                <h3 data-key="projects-skills-title">Skills</h3>
+                <ul>
+                    <li data-key="project-8-skill-1">Gestion des fetchs</li>
+                    <li data-key="project-8-skill-2">Gestion du DOM</li>
+                    <li data-key="project-8-skill-3">Gestion des cookies</li>
+                    <li data-key="project-8-skill-4">Affichage des erreurs</li>
+                    <li data-key="project-8-skill-5">Programmation web</li>
+                    <li>UX design</li>
+                </ul>
+                <h3 data-key="projects-result-title">Result</h3>
+                <div class="image-container">
+                    <figure onclick="displayPicture(event)"><img src="Images/pixelwar1.png"><figcaption data-key="project-8-img-1">L'interface</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/editeur.png"><figcaption data-key="project-8-img-2">Editeur de forme désiné automatiquement par le programme</figcaption></figure>
+                </div>
+            </div>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+        <h1 data-key="contact-title">Contact</h1>
+        <p>Email: <a href="mailto:faustin.montant33@gmail.com" target="_blank" rel="noreferrer noopener">faustin.montant33@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/faustin-montant-43a790312" target="_blank" rel="noreferrer noopener">https://linkedin.com/in/faustin-montant-43a790312</a></p>
+        <p>GitHub: <a href="https://github.com/FofoIsOnInternet" target="_blank" rel="noreferrer noopener">https://github.com/FofoIsOnInternet</a></p>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MONTANT Faustin. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
