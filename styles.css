@@ -283,7 +283,7 @@ section#about [data-key="aboutMe-content"]{
 
 /* Project containers style */
 
-.project {
+[class^="project"] {
     border: 1px solid #ddd;
     padding: 20px;
     margin-bottom: 20px;
@@ -293,11 +293,11 @@ section#about [data-key="aboutMe-content"]{
     transition: transform 0.3s ease;
 }
 
-.project:hover {
+[class^="project"]:hover {
     transform: translateY(-5px);
 }
 
-.project h2 {
+[class^="project"] h2 {
     margin-top: 0;
 }
 
@@ -305,6 +305,16 @@ section#about [data-key="aboutMe-content"]{
     margin-bottom: 10px;
 }
 
+/* project favorites */
+[class$="-favorite"]{
+    border : 2.5px solid gold
+}
+[class$="-favorite"] h2::after{
+    content:"⭐";
+    position:relative;
+    font-size: 17px;
+    left:8px;
+}
 
 /* The part of projects that is hidden by default
    Used to display additional information about a project
