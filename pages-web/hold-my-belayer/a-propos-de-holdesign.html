@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/vnd.icon" href="favicon.ico">
+    <title>Hold my Belayer</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <div id="navFiller"></div>
+        <nav>
+            <div><img class="icone" src="images/icones/HBLogo.png" alt="Logo de Hold my Belayer"><span class="nomPage">Hold my Belayer</span></div>
+            <ul class="top">
+                <li id="navEdit"><button onclick="retractNav()"><img class="icone" src="images/icones/fleches-de-contour-fin-a-gauche.png" alt="trois traits horizontaux"></button></li>
+                <li><a href="index.html"><img class="icone" src="images/icones/maison.png" alt="incone de maison"><span class="nomPage">Acceuil</span></a></li>
+                <li class="sousMenu">
+                    <a href=""><img class="icone" src="images/icones/panier1.png" alt="incone de cadi"><span class="nomPage">Boutique</span></a>
+                    <button onclick="deploySousMenu(0)"><img class="icone" src="images/icones/panier1.png" alt="incone de cadi"><span class="nomPage">Boutique</span></button>
+                    <ul>
+                        <li><a href="404.html">Prises d'escalade</a></li>
+                        <li><a href="404.html">Prises custom</a></li>
+                    </ul>
+                </li>
+                <li><a href="404.html"><img class="icone" src="images/icones/crayon.png" alt="incone de crayon"><span class="nomPage">Hold'esign</span></a></li>
+                <li class="sousMenu">
+                    <a href=""><img class="icone" src="images/icones/info.png" alt="un cercle avec un i"><span class="nomPage">A propos</span></a>
+                    <button  onclick="deploySousMenu(1)"><img class="icone" src="images/icones/info.png" alt="un cercle avec un i"><span class="nomPage">A propos</span></button>
+                    <ul>
+                        <li><a href="a-propos-de-entreprise.html">De Hold my Belayer</a></li>
+                        <li><a href="404.html">De la production</a></li>
+                        <li><a href="a-propos-de-holdesign.html">De Hold'esign</a></li>
+                        <li><a href="mentions-légales.html">Mentions légales</a></li>
+                    </ul>
+                </li>
+                <li class="sousMenu">
+                    <a href=""><img class="icone" src="images/icones/bulle-de-chat.png" alt="une bulle de chat"><span class="nomPage">Contacter</span></a>
+                    <button onclick="deploySousMenu(2)"><img class="icone" src="images/icones/bulle-de-chat.png" alt="une bulle de chat"><span class="nomPage">Contacter</span></button>
+                    <ul>
+                        <li><a href="contacter.html">Obtenir des informations suplémentaires </a></li>
+                        <li><a href="demander-un-accompagnement.html">Demander un accompagnement</a></li>
+                        <li><a href="404.html">Devenir partenaire</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="bottom">
+                <li><a href="404.html"><img class="icone" src="images/icones/panier.png" alt="incone de panier"><span class="nomPage">Panier</span></a></li>
+                <li><a href="404.html"><img class="icone" src="images/icones/utilisateur.png" alt="une silhouette d'utilisateur"><span class="nomPage">Se connecter</span></a></li>
+            </ul>
+        </nav>
+        <div id="anythingbutnav">
+            <main>
+                <span class="path">A propos &gt; de Hold'esign</span>
+                <article>
+                    <h1>Hold'edign</h1>
+                    <h2>Présentation</h2>
+                    <aside>
+                        <p class="right">
+                            L’outils Hold’esign vous permez de créer des modèles 3D de prises d’escalade. La taille, la forme, la couleur, tout est personnalisable. Vous pouvez stocker un maximum de 50 modèles sur votre compte. 
+                            <br>Après une validation automatique du modèle selon une liste de critères et de règles conforment à la norme EN-12572-3. Vous pourrez faire imprimer votre prise directement sur nos machines avec nos matériaux.
+                        </p>
+                        <figure class="left">
+                            <img src="images/climbing-holds-486027_1920.webp" alt="prises d'escalade rouge sur un mur d'escalade d'intérieur blanc" style="height:250px;object-fit: cover;">
+                            <figcaption>Image par <a href="https://pixabay.com/fr/users/422737-422737/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=486027">422737</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=486027">Pixabay</a></figcaption>
+                        </figure>
+                    </aside>
+                    <h2>Les tarifs</h2>
+                    <p>Le prix de la prise est défini selon sa taille : </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Taille</th>
+                                <th>Prix</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Extra small</td>
+                                <td>3 à 6</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Small</td>
+                                <td>7 à 9</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>Médium</td>
+                                <td>10 à 14</td>
+                                <td>13</td>
+                            </tr>
+                            <tr>
+                                <td>Large</td>
+                                <td>15 à 20</td>
+                                <td>22</td>
+                            </tr>
+                            <tr>
+                                <td>Extra large</td>
+                                <td>20 à 30</td>
+                                <td>35</td>
+                            </tr>
+                            <tr>
+                                <td>XXL</td>
+                                <td>30 à 40</td>
+                                <td>49</td>
+                            </tr>
+                            <tr>
+                                <td>Macro</td>
+                                <td>40 à 60</td>
+                                <td>69</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Caractéristiques</h2>
+                    <p>
+                        Les matériaux utilisés pour imprimer les prises répondent formellement à ces critères : <br>
+                        <strong> solide, durable, écologique, adhérent  </strong>
+                    </p>
+                    <figure>
+                        <img src="images/ivy-1287383_1920.webp" alt="Pousses d'arbres qui bourgeonnent sur un rocher éclairé par un graillon de soleil" style="height: auto;">
+                        <figcaption>Image par <a href="https://pixabay.com/fr/users/brenkee-2021352/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1287383">Benjamin Balazs</a> de <a href="https://pixabay.com/fr//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1287383">Pixabay</a></figcaption>
+                    </figure>
+                </article>
+                <footer>
+                    <a href="contacter.html">Contacter</a>
+                    <a href="mentions-légales.html">Mentions légales</a>
+                    <div>
+                        <a href="mailto:holdmybelayer-contact@mail.com">holdmybelayer-contact@mail.com</a><br>
+                        75 avenue de l'escalade 1205 Genève
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -66,7 +66,7 @@ function hidePicture(){
  */
 document.addEventListener('DOMContentLoaded', function () {
     const languageSwitcher = document.getElementById('language-switcher');
-    let currentLanguage = 'en'; // default lang is english
+    let currentLanguage = navigator.language.substring(0,2) == 'fr' ? 'fr' : 'en'; // default lang is english
 
     languageSwitcher.addEventListener('click', function () {
         currentLanguage = currentLanguage === 'en' ? 'fr' : 'en';
@@ -97,6 +97,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         readMore = fields["read-more"];
         readLess = fields["read-less"];
+        document.lang = language;
+        document.querySelector("html").setAttribute("lang",language);
+        languageSwitcher.querySelector("img").src = `./Images/flag_${language}.svg`
     }
 
     updateLanguage(currentLanguage); // Update to default

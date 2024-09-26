@@ -20,7 +20,7 @@ header {
 
 /* Header Name & second name*/
 
-header span{
+header > span{
     color: #333;
     background-color: #f9f9f9;
     padding: 5px;
@@ -43,6 +43,17 @@ header span{
     right: 0;
     margin-right: 10px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+#language-switcher span{
+    position: static;
+    font-size: 15px;
+    margin-left: 5px;
+}
+#language-switcher img{
+    width: 25px;
+    height: 16px;
 }
 
 /* navigation style */

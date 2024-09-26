@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/vnd.icon" href="favicon.ico">
+    <title>Hold my Belayer</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="container">
+        <div id="navFiller"></div>
+        <nav>
+            <div><img class="icone" src="images/icones/HBLogo.png" alt="Logo de Hold my Belayer"><span class="nomPage">Hold my Belayer</span></div>
+            <ul class="top">
+                <li id="navEdit"><button onclick="retractNav()"><img class="icone" src="images/icones/fleches-de-contour-fin-a-gauche.png" alt="trois traits horizontaux"></button></li>
+                <li><a href="index.html"><img class="icone" src="images/icones/maison.png" alt="incone de maison"><span class="nomPage">Acceuil</span></a></li>
+                <li class="sousMenu">
+                    <a href="404.html"><img class="icone" src="images/icones/panier1.png" alt="incone de cadi"><span class="nomPage">Boutique</span></a>
+                    <button onclick="deploySousMenu(0)"><img class="icone" src="images/icones/panier1.png" alt="incone de cadi"><span class="nomPage">Boutique</span></button>
+                    <ul>
+                        <li><a href="404.html">Prises d'escalade</a></li>
+                        <li><a href="404.html">Prises custom</a></li>
+                    </ul>
+                </li>
+                <li><a href="404.html"><img class="icone" src="images/icones/crayon.png" alt="incone de crayon"><span class="nomPage">Hold'esign</span></a></li>
+                <li class="sousMenu">
+                    <a href=""><img class="icone" src="images/icones/info.png" alt="un cercle avec un i"><span class="nomPage">A propos</span></a>
+                    <button  onclick="deploySousMenu(1)"><img class="icone" src="images/icones/info.png" alt="un cercle avec un i"><span class="nomPage">A propos</span></button>
+                    <ul>
+                        <li><a href="a-propos-de-entreprise.html">De Hold my Belayer</a></li>
+                        <li><a href="404.html">De la production</a></li>
+                        <li><a href="a-propos-de-holdesign.html">De Hold'esign</a></li>
+                        <li><a href="mentions-légales.html">Mentions légales</a></li>
+                    </ul>
+                </li>
+                <li class="sousMenu">
+                    <a href=""><img class="icone" src="images/icones/bulle-de-chat.png" alt="une bulle de chat"><span class="nomPage">Contacter</span></a>
+                    <button onclick="deploySousMenu(2)"><img class="icone" src="images/icones/bulle-de-chat.png" alt="une bulle de chat"><span class="nomPage">Contacter</span></button>
+                    <ul>
+                        <li><a href="contacter.html">Obtenir des informations suplémentaires </a></li>
+                        <li><a href="demander-un-accompagnement.html">Demander un accompagnement</a></li>
+                        <li><a href="404.html">Devenir partenaire</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="bottom">
+                <li><a href="404.html"><img class="icone" src="images/icones/panier.png" alt="incone de panier"><span class="nomPage">Panier</span></a></li>
+                <li><a href="404.html"><img class="icone" src="images/icones/utilisateur.png" alt="une silhouette d'utilisateur"><span class="nomPage">Se connecter</span></a></li>
+            </ul>
+        </nav>
+        <div id="anythingbutnav">
+            <main>
+                <span class="path">A propos &gt; de Hold my Belayer</span>
+                <article>
+                    <h1>Hold my Belayer</h1>
+                    <h2>Présentation</h2>
+                    <aside>
+                        <p class="right">
+                            Situé au pied des Alpes dans la capitale Suisse de l’escalade, c’est à Genève que Hold my Belayer voit le jour en 2021. L’entreprise est fondée par deux Français : Olier Chabot et Hélène Sansouci. Avec pour objectif de révolutionner le domaine de la production de prises d’escalade, HB crée sa marque hors du commun en se basant sur trois principes fondamentaux : le respect de l’environnement, la qualité et une adéquation avec les vrais besoins et désirs des grimpeurs.
+                            <br><br>Au départ, Hold my Belayer ne proposait qu’une gamme limitée de prises d’escalades imprimées en 3D, mais cela n’a eu que peu d’importance. L’idée d’une prise écologique et facile à produire avait déjà fait décoller l’entreprise. L'arrivée de l’outil de modélisation gratuit, Hold’esign en 2022 lui a fait enregistrer une croissance record, en apportant au plus grand nombre la joie de créer ses propres prises d’escalade avec une touche de conscience écologique. Aujourd’hui se sont plus de 1000 modèles de prises développées en collaboration avec vous et disponibles pour les entreprises et les particuliers. Hold my Belayer, c’est aussi un service d’accompagnement et de partenariat performant pour vous aider à bâtir votre projet.
+                        </p>
+                        <figure class="left">
+                            <img src="images/jeune-femme-escaladant-grand-mur-escalade-artificiel-interieur.webp" alt="jeune-femme-escaladant-grand-mur-escalade-artificiel-interieur" style="height:400px;object-fit: cover;">
+                            <figcaption><a href="https://fr.freepik.com/photos-gratuite/jeune-femme-escaladant-grand-mur-escalade-artificiel-interieur_8995287.htm#query=mur%20escalade&position=27&from_view=keyword&track=ais&uuid=6ac045bd-b35d-4355-b1ca-ef08ae32bd5a">Image de teksomolika</a> sur Freepik</figcaption>
+                        </figure>
+                    </aside>
+                    <h2>La production</h2>
+                    <p>Les prises sont imprimés dans nos locaux à Genève avec des matériaux durables, de qualité et respectueux de l'environnement. La recette est secrète mais on vous en dit plus ici :</p>
+                    <a class="redirection" href="404.html">En savoir plus</a>
+                    <h2>L'équipe</h2>
+                    <p>Derrière chacunes de vos prises ce sont plus 10 personnes qui travaillent pour vous offrir les meilleurs produits possible : 
+                    </p>
+                    <h2>Nous rejoindre</h2>
+                    <p>
+                        <strong>Vous voulez rejoindre l’équipe de Hold my Belayer ?</strong>
+                        <br>Contactez nous par mail: <a href="mailto:holdmybelayer-contact@mail.com">holdmybelayer-contact@mail.com</a> ou depuis le <a href="contacter.html">formulaire</a>. 
+
+                    </p>
+                </article>
+                <footer>
+                    <a href="contacter.html">Contacter</a>
+                    <a href="mentions-légales.html">Mentions légales</a>
+                    <div>
+                        <a href="mailto:holdmybelayer-contact@mail.com">holdmybelayer-contact@mail.com</a><br>
+                        75 avenue de l'escalade 1205 Genève
+                    </div>
+                </footer>
+            </main>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
