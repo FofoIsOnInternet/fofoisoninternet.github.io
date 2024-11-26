@@ -38,6 +38,8 @@
     "project-7-description":"Creation of an informative website for an imaginary company.",
     "project-8-title":"Development of an interactive web application",
     "project-8-description":"Using a JavaScript API to integrate a student pixel war into a web application.",
+    "project-9-title":"Implementation and test of a data sctructure",
+    "project-9-description":"The goal was to implement a data structure with the ability to stock integers without duplicates. It was implemented three times, and performance measures were made to test the implementations.",
     "contact-title":"Contact",
     "project-1-spec-1":"Weather data management",
     "project-1-spec-2":"Displaying data in an histogram",
@@ -61,6 +63,8 @@
     "project-8-spec-1":"Implementation of a game similar to 'r/place'",
     "project-8-spec-2":"Creation of a GUI",
     "project-8-spec-3":"Usage of an API",
+    "project-9-spec-1":"Implementation of a data structure",
+    "project-9-spec-2":"Realization of benchmarks",
     "project-1-skill-1":"Programming in a strongly typed language",
     "project-1-skill-2":"Code quality and documentation",
     "project-1-skill-3":"Data management and exploitation",
@@ -92,6 +96,8 @@
     "project-8-skill-3":"Cookies management",
     "project-8-skill-4":"Displaying errors",
     "project-8-skill-5":"Web development",
+    "project-9-skill-1":"Code optimisation and analysis",
+    "project-9-skill-2":"project structuring",
     "project-1-img-1":"Setting a time slot for heating",
     "project-1-img-2":"Checking the rain gauge",
     "project-2-img-1":"A game of Towa",
@@ -108,5 +114,8 @@
     "project-7-img-4":"The 404 page",
     "project-7-img-5":"The website mobile version",
     "project-8-img-1":"",
-    "project-8-img-2":"Shape editor. The program automatically draws what you want."
+    "project-8-img-2":"Shape editor. The program automatically draws what you want.",
+    "project-9-img-1":"",
+    "project-9-img-2":"",
+    "project-9-img-3":""
 }

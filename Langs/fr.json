@@ -38,6 +38,8 @@
     "project-7-description":"Création d'un site web informatif pour une entreprise imaginaire.",
     "project-8-title":"Développement d’une application web intéractive",
     "project-8-description":"Utilisation d'une API avec Java Script pour intégrer une bataille de pixels étudiante dans une application web.",
+    "project-9-title":"Implémentation et test d'une structure de donnée",
+    "project-9-description":"L'objectif était d'implémenter une structure de données permettant de stocker des entiers sans doublon, et de mesurer ses performances dans différents langages de programmation. ",
     "contact-title":"Contacter",
     "project-1-spec-1":"Gestion de données météo",
     "project-1-spec-2":"Affichage de données dans un histogramme",
@@ -61,6 +63,8 @@
     "project-8-spec-1":"Implémentation d’un jeu similaire à “r/place”",
     "project-8-spec-2":"Création d’une IHM",
     "project-8-spec-3":"Utilisation d’une API",
+    "project-9-spec-1":"Implémentation d'une structure de données",
+    "project-9-spec-2":"Réalisation et analyse de benchmarks",
     "project-1-skill-1":"Programmation dans un langage fortement typé",
     "project-1-skill-2":"Qualité de code et documentation",
     "project-1-skill-3":"Gestion et exploitation de données",
@@ -92,6 +96,8 @@
     "project-8-skill-3":"Gestion des cookies",
     "project-8-skill-4":"Affichage des erreurs",
     "project-8-skill-5":"Programmation web",
+    "project-9-skill-1":"Optimisation et analyse de code",
+    "project-9-skill-2":"Structuration de projet",
     "project-1-img-1":"Définition d'un créneau horaire pour le chauffage",
     "project-1-img-2":"Consultation du pluviomètre",
     "project-2-img-1":"Une partie de towa",
@@ -108,5 +114,8 @@
     "project-7-img-4":"La page 404 du site",
     "project-7-img-5":"La version mobile du site web",
     "project-8-img-1":"L'interface",
-    "project-8-img-2":"Editeur de forme désiné automatiquement par le programme"
+    "project-8-img-2":"Editeur de forme désiné automatiquement par le programme",
+    "project-9-img-1":"Temps d'exécution et allocation de mémoire lors de la création de la structure.",
+    "project-9-img-2":"Maintenant lors de insertion de valeurs.",
+    "project-9-img-3":"Et enfin lors de la suppression de valeurs."
 }

@@ -38,6 +38,8 @@
     "project-7-description":"",
     "project-8-title":"",
     "project-8-description":"",
+    "project-9-title":"",
+    "project-9-description":"",
     "contact-title":"",
     "project-1-spec-1":"",
     "project-1-spec-2":"",
@@ -61,6 +63,8 @@
     "project-8-spec-1":"",
     "project-8-spec-2":"",
     "project-8-spec-3":"",
+    "project-9-spec-1":"",
+    "project-9-spec-2":"",
     "project-1-skill-1":"",
     "project-1-skill-2":"",
     "project-1-skill-3":"",
@@ -92,6 +96,8 @@
     "project-8-skill-3":"",
     "project-8-skill-4":"",
     "project-8-skill-5":"",
+    "project-9-skill-1":"",
+    "project-9-skill-2":"",
     "project-1-img-1":"",
     "project-1-img-2":"",
     "project-2-img-1":"",
@@ -108,5 +114,8 @@
     "project-7-img-4":"",
     "project-7-img-5":"",
     "project-8-img-1":"",
-    "project-8-img-2":""
+    "project-8-img-2":"",
+    "project-9-img-1":"",
+    "project-9-img-2":"",
+    "project-9-img-3":""
 }
