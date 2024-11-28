@@ -104,3 +104,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     updateLanguage(currentLanguage); // Update to default
 });
+
+/**
+ * Boutton CV
+ */
+document.getElementById("cv").addEventListener('click',(ev)=>{
+    window.open(`./Images/CV_${document.lang}.pdf`,"_blank",null);
+});
