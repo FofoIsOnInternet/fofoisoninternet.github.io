@@ -43,8 +43,6 @@ function displayPicture(event) {
     }
     imgInitial = figureInitial.querySelector("img");
     figcaptionInitial =  figureInitial.querySelector("figcaption");
-    // Show div
-    divImgHolder.style.visibility = "visible";
     // Set image
     imgHolder = divImgHolder.querySelector("img");
     imgHolder.src = imgInitial.src;
@@ -52,6 +50,8 @@ function displayPicture(event) {
     figcaptionHolder = divImgHolder.querySelector("figcaption");
     console.log(figcaptionInitial.textContent);
     figcaptionHolder.textContent = figcaptionInitial.textContent;
+    // Show div
+    divImgHolder.style.visibility = "visible";
 }
 /**
  * Hide the full-screen image.
