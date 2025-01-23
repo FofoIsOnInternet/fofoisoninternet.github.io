@@ -32,7 +32,7 @@
         <h1 data-key="aboutMe-title">About Me</h1>
         <div>
             <div>
-                <p data-key="aboutMe-content">Hi, I am a student in IT learning to be a developer. [Add more about yourself here]</p>
+                <p data-key="aboutMe-content">Hi, I am a student in IT learning to be a developer.</p>
             </div>
             <div>
                 <img src="Images/photo identitВ.jpg" alt="Photo d'identité">
@@ -46,10 +46,12 @@
             <!-- Web Development -->
             <div class="skills-container">
                 <h2 data-key="skill-1-title">Web Development</h2>
+                <!--
                 <div class="skill">
                     <img src="Images/HTML5.png">
                     <span>HTML</span>
                 </div>
+                -->
                 <div class="skill">
                     <img src="Images/CSS3.png">
                     <span>CSS</span>
@@ -75,6 +77,10 @@
                 <div class="skill">
                     <img src="Images/symfony.png">
                     <span>Symfony</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/tailwind.png">
+                    <span>Tailwind css</span>
                 </div>
             </div>
             <!-- Programming Languages -->
@@ -127,6 +133,10 @@
                 <div class="skill">
                     <img src="Images/hands.png">
                     <span data-key="skill-5">Project Management</span>
+                </div>
+                <div class="skill">
+                    <img src="Images/scrum.png">
+                    <span data-key="skill-8">Méthodes agile</span>
                 </div>
             </div>
         </div>  
@@ -235,6 +245,66 @@
                 <div class="image-container">
                     <figure onclick="displayPicture(event)"><img src="Images/pixelwar1.png"><figcaption data-key="project-8-img-1">L'interface</figcaption></figure>
                     <figure onclick="displayPicture(event)"><img src="Images/editeur.png"><figcaption data-key="project-8-img-2">Editeur de forme désiné automatiquement par le programme</figcaption></figure>
+                </div>
+            </div>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+        </div>
+        <!--   Project 12    -->
+        <div class="project-favorite">
+            <h2 data-key="project-12-title">Développement d'une application web de gestion de championnat.</h2>
+            <p class="description" data-key="project-12-description">
+                Lors d'une immersion dans le cadre scrum, nous avons développé un site de gestion de championnat de robots.
+            </p>
+            <div class="more-text-closed">
+                <h3 data-key="projects-specifications-title">Specifications</h3>
+                <ul>
+                    <li data-key="project-12-spec-1">Application de méthode de gestion de projet agile.</li>
+                    <li data-key="project-12-spec-2">Implémentation des user stories choisies dans le sprint backlog.</li>
+                    <li data-key="project-12-spec-3">Création d'une base de de données capable de maintenir l'intégrité de ses données.</li>
+                    <li data-key="project-12-spec-4">Création d'un site web interactif répondant à un besoin.</li>
+                </ul>
+                <h3 data-key="projects-tools-title">Tools</h3>
+                <div class="tools-container">
+                    <div class="tool">
+                        <img src="Images/symfony.png">
+                        <span>Symfony</span>
+                    </div>
+                    <div class="tool">
+                        <img src="Images/PHP.png">
+                        <span>PHP</span>
+                    </div>
+                    <div class="tool">
+                        <img src="Images/tailwind.png">
+                        <span>Tailwind css</span>
+                    </div>
+                    <div class="tool">
+                        <img src="Images/twig.png">
+                        <span>Twig</span>
+                    </div>
+                    <div class="tool">
+                        <img src="Images/git.png">
+                        <span>Git</span>
+                    </div>
+                    <div class="tool">
+                        <img src="Images/sql.png">
+                        <span>SQL</span>
+                    </div>
+                    <div class="tool">
+                        <img src="Images/PhpMyAdmin.png">
+                        <span>phpMyAdmin</span>
+                    </div>
+                </div>
+                <h3 data-key="projects-skills-title">Skills</h3>
+                <ul>
+                    <li data-key="project-12-skill-1">Gestion de projet</li>
+                    <li data-key="project-12-skill-2">Travail en équipe</li>
+                    <li data-key="project-12-skill-3">Développement d'un projet avec une architechture MVC</li>
+                </ul>
+                <h3 data-key="projects-result-title">Result</h3>
+                <div class="image-container">
+                    <figure onclick="displayPicture(event)"><img src="Images/s3011.png"><figcaption data-key="project-12-img-1">Page d'accueil</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/s3012.png"><figcaption data-key="project-12-img-2">Gestion et affichage des rencontres</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/s3013.png"><figcaption data-key="project-12-img-3">Génération du championnat</figcaption></figure>
                 </div>
             </div>
             <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
