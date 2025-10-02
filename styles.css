@@ -310,6 +310,14 @@ section#about [data-key="aboutMe-content"]{
 
 [class^="project"] h2 {
     margin-top: 0;
+    margin-bottom: 3px;
+}
+
+h2 + p.date {
+    font-size: 14px;
+    color:rgb(62, 62, 62);
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .description {
