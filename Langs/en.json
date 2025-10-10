@@ -168,5 +168,18 @@
   "month-9": "September",
   "month-10": "October",
   "month-11": "November",
-  "month-12": "December"
+  "month-12": "December",
+  "project-13-title": "Creation of a website to exchange and donate items.",
+  "project-13-description": "A two-month internship project to imagine, create, and program a website around the Sustainable Development Goals (SDGs).",
+  "project-13-spec-1": "Project centered on a Sustainable Development Goal",
+  "project-13-spec-2": "Project design: Market analysis, User journey, Brand design, Mock-ups.",
+  "project-13-spec-3": "Pitching the project to a jury",
+  "project-13-spec-4": "Development of a proof of concept",
+  "project-13-img-1": "Website homepage",
+  "project-13-img-2": "Project structure",
+  "project-13-img-3": "Project issue board",
+  "project-13-img-4": "API Documentation",
+  "project-13-skill-1": "Project preparation and presentation",
+  "project-13-skill-2": "Project structure and quality of code",
+  "project-13-skill-3": "API programming"
 }

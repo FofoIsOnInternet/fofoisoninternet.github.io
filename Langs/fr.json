@@ -10,7 +10,7 @@
   "skill-4-title": "Systèmes et Gestion",
   "skill-1": "Graphes",
   "skill-2": "Algorithmique",
-  "skill-3": "Systèmes informatiques",
+  "skill-3": "",
   "skill-4": "Réseaux",
   "skill-5": "Gestion de projets",
   "skill-6": "Émulateur de réseaux",
@@ -168,5 +168,18 @@
   "month-9": "Septembre",
   "month-10": "Octobre",
   "month-11": "Novembre",
-  "month-12": "Décembre"
+  "month-12": "Décembre",
+  "project-13-title": "Création d’un site web pour échanger et donner des objets.",
+  "project-13-description": "Un projet de stage de deux mois pour imaginer, créer et programmer un site web autour des Objectifs de Développement Durable (ODD)",
+  "project-13-spec-1": "Projet centré sur un Objectif de Développement Durable",
+  "project-13-spec-2": "Design du projet: Analyse de marché, User journey, Brand design, Maquettes.",
+  "project-13-spec-3": "Présenter le projet à un jury.",
+  "project-13-spec-4": "Développement d’une preuve de concept.",
+  "project-13-img-1": "Page d’acceuil du site",
+  "project-13-img-2": "Structure du projet",
+  "project-13-img-3": "Issue board du projet",
+  "project-13-img-4": "Documentation de l'API",
+  "project-13-skill-1": "Préparation et présentation de projet",
+  "project-13-skill-2": "Structure de projet et qualité de code",
+  "project-13-skill-3": "Programmation d'API"
 }
