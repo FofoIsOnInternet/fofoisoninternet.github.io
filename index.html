@@ -32,7 +32,7 @@
         <h1 data-key="aboutMe-title">About Me</h1>
         <div>
             <div>
-                <p data-key="aboutMe-content">Hi, I am a student in IT learning to be a developer.</p>
+                <p data-key="aboutMe-content"></p>
             </div>
             <div>
                 <img src="Images/photo identitВ.jpg" alt="Photo d'identité">
@@ -46,6 +46,10 @@
             <!-- Web Development -->
             <div class="skills-container">
                 <h2 data-key="skill-1-title">Web Development</h2>
+                <div class="skill">
+                    <img src="Images/HTML5.png">
+                    <span>HTML</span>
+                </div>
                 <div class="skill">
                     <img src="Images/CSS3.png">
                     <span>CSS</span>
@@ -239,6 +243,45 @@
                     <figure onclick="displayPicture(event)"><img src="Images/STAGE-2.png"><figcaption data-key="project-13-img-4">Documentation de l'API</figcaption></figure>
                     <figure onclick="displayPicture(event)"><img src="Images/STAGE-3.png"><figcaption data-key="project-13-img-2">Structure du projet</figcaption></figure>
                     <figure onclick="displayPicture(event)"><img src="Images/STAGE-4.png"><figcaption data-key="project-13-img-3">Issue board du projet</figcaption></figure>
+                </div>
+            </div>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+        </div>
+        <!--   Projet 3    -->
+        <div class="project">
+            <h2 data-key="project-3-title">Développement d’un jeu de carte intéractif</h2>
+            <p class="date"><span data-key="month-4"></span> 2024</p>
+            <p class="description" data-key="project-3-description">
+            </p>
+            <div class="more-text-closed">
+                <h3 data-key="projects-specifications-title">Specifications</h3>
+                <ul>
+                    <li data-key="project-3-spec-1">Implementation d’un jeu de carte à deux joueurs</li>
+                    <li data-key="project-3-spec-2">Programmation d’une interface homme-machine</li>
+                </ul>
+                <h3 data-key="projects-tools-title">Tools</h3>
+                <div class="tools-container">
+                    <div class="tool">
+                        <img src="Images/Csharp.png">
+                        <span>Windows Forms C#</span>
+                    </div>
+                    <div class="tool">
+                        <img src="Images/visualstudio.png">
+                        <span>Visual Studio</span>
+                    </div>
+                    <div class="tool">
+                        <img src="Images/git.png">
+                        <span>Git</span>
+                    </div>  
+                </div>
+                <h3 data-key="projects-skills-title">Skills</h3>
+                    <ul>
+                        <li data-key="project-3-skill-1">Utilisation de concepts de programmation orienté objet avancé</li>
+                        <li data-key="project-3-skill-2">Utilisation de git</li>
+                    </ul>
+                <h3 data-key="projects-result-title">Result</h3>
+                <div class="image-container">
+                    <figure onclick="displayPicture(event)"><img src="Images/cardgame.png"><figcaption data-key="project-3-img-1">L'interface d'une partie de University deck build duel</figcaption></figure>
                 </div>
             </div>
             <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
@@ -475,45 +518,6 @@
                     <figure onclick="displayPicture(event)"><img src="Images/benchmarkBuild.png"><figcaption data-key="project-9-img-1"></figcaption></figure>
                     <figure onclick="displayPicture(event)"><img src="Images/benchmarkInsert.png"><figcaption data-key="project-9-img-2"></figcaption></figure>
                     <figure onclick="displayPicture(event)"><img src="Images/benchmarkRemove.png"><figcaption data-key="project-9-img-3"></figcaption></figure>
-                </div>
-            </div>
-            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
-        </div>
-        <!--   Projet 3    -->
-        <div class="project">
-            <h2 data-key="project-3-title">Développement d’un jeu de carte intéractif</h2>
-            <p class="date"><span data-key="month-4"></span> 2024</p>
-            <p class="description" data-key="project-3-description">
-            </p>
-            <div class="more-text-closed">
-                <h3 data-key="projects-specifications-title">Specifications</h3>
-                <ul>
-                    <li data-key="project-3-spec-1">Implementation d’un jeu de carte à deux joueurs</li>
-                    <li data-key="project-3-spec-2">Programmation d’une interface homme-machine</li>
-                </ul>
-                <h3 data-key="projects-tools-title">Tools</h3>
-                <div class="tools-container">
-                    <div class="tool">
-                        <img src="Images/Csharp.png">
-                        <span>Windows Forms C#</span>
-                    </div>
-                    <div class="tool">
-                        <img src="Images/visualstudio.png">
-                        <span>Visual Studio</span>
-                    </div>
-                    <div class="tool">
-                        <img src="Images/git.png">
-                        <span>Git</span>
-                    </div>  
-                </div>
-                <h3 data-key="projects-skills-title">Skills</h3>
-                    <ul>
-                        <li data-key="project-3-skill-1">Utilisation de concepts de programmation orienté objet avancé</li>
-                        <li data-key="project-3-skill-2">Utilisation de git</li>
-                    </ul>
-                <h3 data-key="projects-result-title">Result</h3>
-                <div class="image-container">
-                    <figure onclick="displayPicture(event)"><img src="Images/cardgame.png"><figcaption data-key="project-3-img-1">L'interface d'une partie de University deck build duel</figcaption></figure>
                 </div>
             </div>
             <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
