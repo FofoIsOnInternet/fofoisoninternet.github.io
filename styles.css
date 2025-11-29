@@ -45,6 +45,7 @@ header > span{
     font-weight: bold;
     display: flex;
     justify-content: center;
+    cursor:pointer;
 }
 #language-switcher span{
     position: static;
