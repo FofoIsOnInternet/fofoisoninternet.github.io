@@ -182,5 +182,20 @@
   "project-13-skill-1": "Préparation et présentation de projet",
   "project-13-skill-2": "Structure de projet et qualité de code",
   "project-13-skill-3": "Programmation d'API",
-  "skill-5-title": "Base de données"
+  "skill-5-title": "Base de données",
+  "project-14-title": "Développement d'une application web pour suivre l'évolution d'une salle informatique équipée avec d'anciens ordinateurs.",
+  "project-14-description": "Dans le cadre des projets d'innovants de BUT3 FI, j'ai pu participer à un projet de recherche du LaBRI. Leur objectif est de voir s'il est possible de donner cours dans des salles informatique dont les ordinateurs sont renouvelés tous les 15 ans au lieu de tous les 5 ans.",
+  "project-14-spec-1": "Créer une application pour recueillir le ressenti et les problèmes rencontrés par les enseignants durant leur cours.",
+  "project-14-spec-2": "Créer un tableau de bord pour analyser les problèmes scanés avec des statistiques.",
+  "project-14-spec-3": "Rendre l'application ludique et rapide d'utilisation avec des QR codes.",
+  "project-14-spec-4": "Présenter et faire une démo du projet sur Twitch",
+  "project-14-skill-1": "Architechture de projet",
+  "project-14-skill-2": "Programmation d'API",
+  "project-14-skill-4": "Pitch et démo de projet",
+  "project-14-skill-5": "Génération de QR codes",
+  "project-14-skill-6": "Présentation en direct",
+  "project-14-img-1": "Page web mobile pour scanner les QR codes",
+  "project-14-img-2": "Page d'acceuil du dashboard administrateur",
+  "project-14-img-3": "Répartition des problèmes par application",
+  "project-14-img-4": "Interface pour imprimer et créer des QR codes"
 }

@@ -182,5 +182,20 @@
   "project-13-skill-1": "Project preparation and presentation",
   "project-13-skill-2": "Project structure and quality of code",
   "project-13-skill-3": "API programming",
-  "skill-5-title": "Databases"
+  "skill-5-title": "Databases",
+  "project-14-title": "Development of a web application to monitor the evolution of a computer room equipped with old computers.",
+  "project-14-description": "In the context of the innovative projects of BUT3 students, I had the opportunity to take part in a research project of the LaBRI. Their goal is to see if it is possible to give class in computer rooms that would be renewed every 15 years instead of every 5 years.",
+  "project-14-spec-1": "Create an app to collect the feeling and problems teachers encounter during their class.",
+  "project-14-spec-2": "Create a dashboard to analyse and generate statistics based on problems scanned by teachers",
+  "project-14-spec-3": "Make the app fun and efficient to use with QR codes.",
+  "project-14-spec-4": "Present and make a demo of the project on Twitch",
+  "project-14-skill-1": "Project architechture",
+  "project-14-skill-2": "API development",
+  "project-14-skill-4": "Pitch and demo of the project",
+  "project-14-skill-5": "QR code generation",
+  "project-14-skill-6": "Live presentation",
+  "project-14-img-1": "Phone web page to scan QR codes",
+  "project-14-img-2": "Admin dashboard home page",
+  "project-14-img-3": "Distribution of problems by application",
+  "project-14-img-4": "Interface to print and create QR codes"
 }
