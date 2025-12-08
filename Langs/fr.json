@@ -197,5 +197,8 @@
   "project-14-img-1": "Page web mobile pour scanner les QR codes",
   "project-14-img-2": "Page d'acceuil du dashboard administrateur",
   "project-14-img-3": "Répartition des problèmes par application",
-  "project-14-img-4": "Interface pour imprimer et créer des QR codes"
+  "project-14-img-4": "Interface pour imprimer et créer des QR codes",
+  "filter-title": "Filtres",
+  "filter-favorite": "Favoris",
+  "filter-perso": "Personnels"
 }

@@ -336,6 +336,60 @@ h2 + p.date {
     left:8px;
 }
 
+/* project perso */
+[class$="-perso"]{
+    border : 2.5px solid #007BFF
+}
+[class$="-perso"] h2::after{
+    content:"👤​";
+    position:relative;
+    font-size: 17px;
+    left:8px;
+}
+/**
+    Filter the projects by personal or favorites
+*/
+
+/* Filter container */
+.prjct-filters {
+    display: flex;
+    align-items: center;
+    padding: 0 10px 20px 10px;
+    gap: 8px;
+}
+
+/* Filters */
+.prjct-filters > [class^="filter"] {
+    padding: 3px 6px 3px 6px;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* Remove filter box*/
+.prjct-filters input[type=checkbox] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+}
+
+/* Filter checked*/
+.prjct-filters > [class^="filter"]:has(input[type=checkbox]:checked) {
+    background-color: #c9c9c9;
+}
+
+/* Filter label*/
+.prjct-filters label {
+    cursor: pointer;
+}
+
+/* Filters title */
+.prjct-filters > h2 {
+    margin: 0;
+    font-size: medium;
+}
+
 /* The part of projects that is hidden by default
    Used to display additional information about a project
 */

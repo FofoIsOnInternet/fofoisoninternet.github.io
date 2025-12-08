@@ -1,6 +1,7 @@
 // Vars
 let readMore;
 let readLess;
+let projectList;
 
 /**
  * Show or hide the additional informations of the given project.
@@ -61,10 +62,30 @@ function hidePicture(){
     bigImgHolder.style.visibility = "hidden";
 }
 
+// Div containing all the projects
+const projectContainer = document.querySelector("section#projects");
+/**
+ * Display the projects coresponding to the given filter (project-<filter>)
+ * @param {String} filter 
+ */
+function filterProjects(filter){
+    const filteredProjects = projectContainer.querySelectorAll(`h1, .prjct-filters, .project-${filter}`);
+    projectContainer.replaceChildren(...filteredProjects);
+}
+/**
+ * Display all the projects again
+ */
+function removeFilter(){
+    projectContainer.replaceChildren(...projectList);
+}
+
 /**
  * On page load. Load the default language
  */
 document.addEventListener('DOMContentLoaded', function () {
+    // Save all projects
+    projectList = document.querySelectorAll("section#projects > *");
+
     const languageSwitcher = document.getElementById('language-switcher');
     let currentLanguage = navigator.language.substring(0,2) == 'fr' ? 'fr' : 'en'; // default lang is english
 
@@ -90,10 +111,18 @@ document.addEventListener('DOMContentLoaded', function () {
     async function updateLanguage(language) {
         const fields = await fetchLanguage(language);
         for (const [key, value] of Object.entries(fields)) {
+            // Translate the document
             let elements = document.querySelectorAll(`[data-key=${key}]`);
             elements.forEach(elt => {
                 elt.textContent = value;
             });
+            // Translate the full list of projects
+            for(const project of projectList){
+                elements = project.querySelectorAll(`[data-key=${key}]`);
+                elements.forEach(elt => {
+                    elt.textContent = value;
+                });
+            }
         }
         readMore = fields["read-more"];
         readLess = fields["read-less"];
@@ -110,4 +139,26 @@ document.addEventListener('DOMContentLoaded', function () {
  */
 document.getElementById("cv").addEventListener('click',(ev)=>{
     window.open(`./Images/CV_${document.lang}.pdf`,"_blank",null);
+});
+
+/**
+ * Filters
+ */
+const checkboxPerso = document.getElementById("chk-fltr-perso");
+const checkBoxFav = document.getElementById("chk-fltr-fav");
+// On favorite select
+checkBoxFav.parentElement.addEventListener('change',(ev)=>{
+    removeFilter();
+    if (checkBoxFav.checked){
+        checkboxPerso.checked = false;
+        filterProjects("favorite");
+    }
+});
+// On perso select
+checkboxPerso.parentElement.addEventListener('change',(ev)=>{
+    removeFilter();
+    if (checkboxPerso.checked){
+        checkBoxFav.checked = false;
+        filterProjects("perso");
+    }
 });

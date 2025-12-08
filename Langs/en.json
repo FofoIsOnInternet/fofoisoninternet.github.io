@@ -197,5 +197,8 @@
   "project-14-img-1": "Phone web page to scan QR codes",
   "project-14-img-2": "Admin dashboard home page",
   "project-14-img-3": "Distribution of problems by application",
-  "project-14-img-4": "Interface to print and create QR codes"
+  "project-14-img-4": "Interface to print and create QR codes",
+  "filter-title": "Filters",
+  "filter-favorite": "Favorite",
+  "filter-perso": "Personal"
 }
