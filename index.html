@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,33 +19,35 @@
         <span>Faustin MONTANT</span>
         <nav>
             <ul>
-                <li><a href="#about" data-key="aboutMe-title">About Me</a></li>
-                <li><a href="#skills" data-key="skills-title">Skills</a></li>
-                <li><a href="#projects" data-key="projects-title">Projects</a></li>
-                <li><a href="#contact" data-key="contact-title">Contact</a></li>
+                <li><a href="#about" data-key="aboutMe-title">À propos de moi</a></li>
+                <li><a href="#skills" data-key="skills-title">Compétences</a></li>
+                <li><a href="#projects" data-key="projects-title">Projets</a></li>
+                <li><a href="#contact" data-key="contact-title">Contacter</a></li>
             </ul>
         </nav>
-        <button id="language-switcher"><img src="./Images/flag_en.svg"><span data-key="lang">English</span></button>
+        <button id="language-switcher"><img src="./Images/flag_fr.svg" alt="Drapeau Français"><span data-key="lang">Français</span></button>
     </header>
     <!-- About me -->
     <section id="about">
-        <h1 data-key="aboutMe-title">About Me</h1>
+        <h1 data-key="aboutMe-title">À propos de moi</h1>
         <div>
             <div>
-                <p data-key="aboutMe-content"></p>
+                <p data-key="aboutMe-content">
+                    Étudiant au département informatique de l'IUT de Bordeaux, j'aspire à travailler dans le monde extraordinaire de l'informatique. J'espère pouvoir travailler avec une informatique respectueuse de l'Homme et de son monde tout en poursuivant les sujets passionnants qu'elle traite. J'apprécie particulièrement le développement web et travailler sur des API, mais reste ouvert à de nombreux autres domaines de l'informatique.
+                </p>
             </div>
             <div>
                 <img src="Images/photo identitВ.jpg" alt="Photo d'identité">
             </div>
         </div>
     </section>
-    <!-- Skills -->
+    <!-- Compétences -->
     <section id="skills">
-        <h1 data-key="skills-title">Skills</h1>
+        <h1 data-key="skills-title">Compétences</h1>
         <div>
             <!-- Web Development -->
             <div class="skills-container">
-                <h2 data-key="skill-1-title">Web Development</h2>
+                <h2 data-key="skill-1-title">Développement Web</h2>
                 <div class="skill">
                     <img src="Images/HTML5.png">
                     <span>HTML</span>
@@ -69,7 +71,7 @@
             </div>
             <!-- Programming Languages -->
             <div class="skills-container">
-                <h2 data-key="skill-2-title">Programming Languages</h2>
+                <h2 data-key="skill-2-title">Langages de Programmation</h2>
                 <div class="skill">
                     <img src="Images/java.webp">
                     <span>Java</span>
@@ -109,10 +111,10 @@
             </div>
             <!-- Systems and Management -->
             <div class="skills-container">
-                <h2 data-key="skill-4-title">Systems and Management</h2>
+                <h2 data-key="skill-4-title">Systèmes et Gestion</h2>
                 <div class="skill">
-                    <img src="Images/net.png">
-                    <span data-key="skill-4">Networking</span>
+                    <img src="Images/net.png" alt="Image représentant un réseaux">
+                    <span data-key="skill-4">Réseaux</span>
                 </div>
                 <div class="skill">
                     <img src="Images/CICD.jpeg">
@@ -127,8 +129,8 @@
                     <span>Git</span>
                 </div>
                 <div class="skill">
-                    <img src="Images/hands.png">
-                    <span data-key="skill-5">Project Management</span>
+                    <img src="Images/hands.png" alt="Image représentant une poignée de mains">
+                    <span data-key="skill-5">Gestion de projet</span>
                 </div>
                 <div class="skill">
                     <img src="Images/scrum.png">
@@ -163,7 +165,7 @@
     </section>
     <!-- Projects -->
     <section id="projects">
-        <h1 data-key="projects-title">Projects</h1>
+        <h1 data-key="projects-title">Projets</h1>
         <!-- filters -->
         <div class="prjct-filters">
             <h2 data-key="filter-title">Filtres</h2>
@@ -179,7 +181,7 @@
         <!--   Projet 13    -->
         <div class="project-favorite">
             <h2 data-key="project-13-title">Création d’un site web pour échanger et donner des objets.</h2>
-            <p class="date"><span data-key="month-4"></span> - <span data-key="month-6"></span> 2025</p>
+            <p class="date"><span data-key="month-4">Avril</span> - <span data-key="month-6">Juin</span> 2025</p>
             <p class="description" data-key="project-13-description">
                 Un projet de stage de deux mois pour imaginer, créer et programmer un site web autour des Objectifs de Développement Durable (ODD)
             </p>
@@ -191,7 +193,7 @@
                     <li data-key="project-13-spec-3">Présenter le projet à un jury.</li>
                     <li data-key="project-13-spec-4">Développement d’une preuve de concept.</li>
                 </ul>
-                <h3 data-key="projects-tools-title">Tools</h3>
+                <h3 data-key="projects-tools-title">Outils</h3>
                 <div class="tools-container">
                     <div class="tool">
                         <img src="Images/symfony.png">
@@ -210,13 +212,13 @@
                         <span>Tailwind css</span>
                     </div>
                 </div>
-                <h3 data-key="projects-skills-title">Skills</h3>
+                <h3 data-key="projects-skills-title">Compétences</h3>
                     <ul>
                         <li data-key="project-13-skill-1">Préparation et présentation de projet</li>
                         <li data-key="project-13-skill-2">Structure de projet et qualité de code</li>
                         <li data-key="project-13-skill-3">Programmation d’API</li>
                     </ul>
-                <h3 data-key="projects-result-title">Result</h3>
+                <h3 data-key="projects-result-title">Résultat</h3>
                 <div class="image-container">
                     <figure onclick="displayPicture(event)"><img src="Images/STAGE-1.png"><figcaption data-key="project-13-img-1">Page d’acceuil du site</figcaption></figure>
                     <figure onclick="displayPicture(event)"><img src="Images/STAGE-2.png"><figcaption data-key="project-13-img-4">Documentation de l'API</figcaption></figure>
@@ -224,12 +226,12 @@
                     <figure onclick="displayPicture(event)"><img src="Images/STAGE-4.png"><figcaption data-key="project-13-img-3">Issue board du projet</figcaption></figure>
                 </div>
             </div>
-            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Lire plus</button>
         </div>
         <!--   Projet 14    -->
         <div class="project-favorite">
             <h2 data-key="project-14-title">Développement d'une application web pour suivre l'évolution d'une salle informatique équipée avec d'anciens ordinateurs.</h2>
-            <p class="date"><span data-key="month-9"></span> - <span data-key="month-12"></span> 2025</p>
+            <p class="date"><span data-key="month-9">Septembre</span> - <span data-key="month-12">Décembre</span> 2025</p>
             <p class="description" data-key="project-14-description">
                 Dans le cadre des projets d'innovants de BUT3 FI, j'ai pu participer à un projet de recherche du LaBRI. Leur objectif est de voir s'il est possible de donner cours dans des salles informatique dont les ordinateurs sont renouvelés tous les 15 ans au lieu de tous les 5 ans.
             </p>
@@ -241,7 +243,7 @@
                     <li data-key="project-14-spec-3">Rendre l'application ludique et rapide d'utilisation avec des QR codes.</li>
                     <li data-key="project-14-spec-4">Présenter et faire une démo du projet sur Twitch</li>
                 </ul>
-                <h3 data-key="projects-tools-title">Tools</h3>
+                <h3 data-key="projects-tools-title">Outils</h3>
                 <div class="tools-container">
                     <div class="tool">
                         <img src="Images/react.png">
@@ -272,7 +274,7 @@
                         <span>Scrcpy</span>
                     </div>
                 </div>
-                <h3 data-key="projects-skills-title">Skills</h3>
+                <h3 data-key="projects-skills-title">Compétences</h3>
                     <ul>
                         <li data-key="project-14-skill-1">Architechture de projet</li>
                         <li data-key="project-14-skill-2">Programmation d’API</li>
@@ -280,7 +282,7 @@
                         <li data-key="project-14-skill-4">Pitch et démo de projet</li>
                         <li data-key="project-14-skill-6">Présentation en direct</li>
                     </ul>
-                <h3 data-key="projects-result-title">Result</h3>
+                <h3 data-key="projects-result-title">Résultat</h3>
                 <div class="image-container">
                     <figure onclick="displayPicture(event)"><img src="Images/projet-inovant-1.webp"><figcaption data-key="project-14-img-1">Page web mobile pour scanner les QR codes</figcaption></figure>
                     <figure onclick="displayPicture(event)"><img src="Images/projet-inovant-2.png"><figcaption data-key="project-14-img-2">Page d'acceuil du dashboard administrateur</figcaption></figure>
@@ -288,22 +290,23 @@
                     <figure onclick="displayPicture(event)"><img src="Images/projet-inovant-4.png"><figcaption data-key="project-14-img-4">Interface pour imprimer et créer des QR codes</figcaption></figure>
                 </div>
             </div>
-            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Lire plus</button>
         </div>
         <!--   Projet 10   -->
         <div class="project-perso">
-            <h2 data-key="project-10-title"> </h2>
-            <p class="date"><span data-key="month-8"></span> 2024</p>
+            <h2 data-key="project-10-title">Création d'un site web pour consulter une collection</h2>
+            <p class="date"><span data-key="month-8">Août</span> 2024</p>
             <p class="description" data-key="project-10-description">
+                Développement complet d'un site web et d'une base de données permettant de consulter une collection de capsules à couronne.
             </p>
             <div class="more-text-closed">
                 <h3 data-key="projects-specifications-title">Specifications</h3>
                 <ul>
-                    <li data-key="project-10-spec-1"></li>
-                    <li data-key="project-10-spec-2"></li>
-                    <li data-key="project-10-spec-3"></li>
+                    <li data-key="project-10-spec-1">Création d'une base de données</li>
+                    <li data-key="project-10-spec-2">Remplissage de la base de données</li>
+                    <li data-key="project-10-spec-3">Développement d'un site web d'affichage</li>
                 </ul>
-                <h3 data-key="projects-tools-title">Tools</h3>
+                <h3 data-key="projects-tools-title">Outils</h3>
                 <div class="tools-container">
                     <div class="tool">
                         <img src="Images/PHP.png">
@@ -330,28 +333,29 @@
                         <span>Python</span>
                     </div>
                 </div>
-                <h3 data-key="projects-skills-title">Skills</h3>
+                <h3 data-key="projects-skills-title">Compétences</h3>
                 <ul>
-                    <li data-key="project-10-skill-1"></li>
-                    <li data-key="project-10-skill-2"></li>
-                    <li data-key="project-10-skill-3"></li>
-                    <li data-key="project-10-skill-4"></li>
+                    <li data-key="project-10-skill-1">Gestions de jeux de données</li>
+                    <li data-key="project-10-skill-2">Maquettage et MCD</li>
+                    <li data-key="project-10-skill-3">Développement web full-stack</li>
+                    <li data-key="project-10-skill-4">Gestion d'un projet</li>
                 </ul>
-                <h3 data-key="projects-result-title">Result</h3>
+                <h3 data-key="projects-result-title">Résultat</h3>
                 <div class="image-container">
-                    <figure onclick="displayPicture(event)"><img src="Images/crowncaps1.png"><figcaption data-key="project-10-img-1"></figcaption></figure>
-                    <figure onclick="displayPicture(event)"><img src="Images/crowncaps2.png"><figcaption data-key="project-10-img-2"></figcaption></figure>
-                    <figure onclick="displayPicture(event)"><img src="Images/crowncaps3.png"><figcaption data-key="project-10-img-3"></figcaption></figure>
-                    <figure onclick="displayPicture(event)"><img src="Images/crowncaps4.png"><figcaption data-key="project-10-img-4"></figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/crowncaps1.png"><figcaption data-key="project-10-img-1">Page d'accueil du site.</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/crowncaps2.png"><figcaption data-key="project-10-img-2">Page d'une capsule de la collection.</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/crowncaps3.png"><figcaption data-key="project-10-img-3">Affichage mobile avec le thème sombre de la page pour parcourir la collection. On peut aussi voir le menu de navigation.</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/crowncaps4.png"><figcaption data-key="project-10-img-4">Schéma MCD de la base de données du site.</figcaption></figure>
                 </div>
             </div>
-            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Lire plus</button>
         </div>
         <!--   Projet 3    -->
         <div class="project">
             <h2 data-key="project-3-title">Développement d’un jeu de carte intéractif</h2>
-            <p class="date"><span data-key="month-4"></span> 2024</p>
+            <p class="date"><span data-key="month-4">Avril</span> 2024</p>
             <p class="description" data-key="project-3-description">
+                Création d'un logiciel en C# et de son jeu de cartes à deux joueurs.
             </p>
             <div class="more-text-closed">
                 <h3 data-key="projects-specifications-title">Specifications</h3>
@@ -359,7 +363,7 @@
                     <li data-key="project-3-spec-1">Implementation d’un jeu de carte à deux joueurs</li>
                     <li data-key="project-3-spec-2">Programmation d’une interface homme-machine</li>
                 </ul>
-                <h3 data-key="projects-tools-title">Tools</h3>
+                <h3 data-key="projects-tools-title">Outils</h3>
                 <div class="tools-container">
                     <div class="tool">
                         <img src="Images/Csharp.png">
@@ -374,23 +378,24 @@
                         <span>Git</span>
                     </div>  
                 </div>
-                <h3 data-key="projects-skills-title">Skills</h3>
+                <h3 data-key="projects-skills-title">Compétences</h3>
                     <ul>
                         <li data-key="project-3-skill-1">Utilisation de concepts de programmation orienté objet avancé</li>
                         <li data-key="project-3-skill-2">Utilisation de git</li>
                     </ul>
-                <h3 data-key="projects-result-title">Result</h3>
+                <h3 data-key="projects-result-title">Résultat</h3>
                 <div class="image-container">
                     <figure onclick="displayPicture(event)"><img src="Images/cardgame.png"><figcaption data-key="project-3-img-1">L'interface d'une partie de University deck build duel</figcaption></figure>
                 </div>
             </div>
-            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Lire plus</button>
         </div>
         <!--   Project 8    -->
         <div class="project">
             <h2 data-key="project-8-title">Développement d’une application web intéractive</h2>
-            <p class="date"><span data-key="month-4"></span> 2024</p>
+            <p class="date"><span data-key="month-4">Avril</span> 2024</p>
             <p class="description" data-key="project-8-description">
+                Utilisation d'une API avec Java Script pour intégrer une bataille de pixels étudiante dans une application web.
             </p>
             <div class="more-text-closed">
                 <h3 data-key="projects-specifications-title">Specifications</h3>
@@ -399,7 +404,7 @@
                     <li data-key="project-8-spec-2">Création d’une IHM</li>
                     <li data-key="project-8-spec-3">Utilisation d’une API</li>
                 </ul>
-                <h3 data-key="projects-tools-title">Tools</h3>
+                <h3 data-key="projects-tools-title">Outils</h3>
                 <div class="tools-container">
                     <div class="tool">
                         <img src="Images/HTML5.png">
@@ -418,7 +423,7 @@
                         <span>API Doc</span>
                     </div>
                 </div>
-                <h3 data-key="projects-skills-title">Skills</h3>
+                <h3 data-key="projects-skills-title">Compétences</h3>
                 <ul>
                     <li data-key="project-8-skill-1">Gestion des fetchs</li>
                     <li data-key="project-8-skill-2">Gestion du DOM</li>
@@ -427,18 +432,18 @@
                     <li data-key="project-8-skill-5">Programmation web</li>
                     <li>UX design</li>
                 </ul>
-                <h3 data-key="projects-result-title">Result</h3>
+                <h3 data-key="projects-result-title">Résultat</h3>
                 <div class="image-container">
                     <figure onclick="displayPicture(event)"><img src="Images/pixelwar1.png"><figcaption data-key="project-8-img-1">L'interface</figcaption></figure>
                     <figure onclick="displayPicture(event)"><img src="Images/editeur.png"><figcaption data-key="project-8-img-2">Editeur de forme désiné automatiquement par le programme</figcaption></figure>
                 </div>
             </div>
-            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Lire plus</button>
         </div>
         <!--   Project 12    -->
         <div class="project">
             <h2 data-key="project-12-title">Développement d'une application web de gestion de championnat.</h2>
-            <p class="date"><span data-key="month-1"></span> 2025</p>
+            <p class="date"><span data-key="month-1">Janvier</span> 2025</p>
             <p class="description" data-key="project-12-description">
                 Lors d'une immersion dans le cadre scrum, nous avons développé un site de gestion de championnat de robots.
             </p>
@@ -450,7 +455,7 @@
                     <li data-key="project-12-spec-3">Création d'une base de de données capable de maintenir l'intégrité de ses données.</li>
                     <li data-key="project-12-spec-4">Création d'un site web interactif répondant à un besoin.</li>
                 </ul>
-                <h3 data-key="projects-tools-title">Tools</h3>
+                <h3 data-key="projects-tools-title">Outils</h3>
                 <div class="tools-container">
                     <div class="tool">
                         <img src="Images/symfony.png">
@@ -481,36 +486,37 @@
                         <span>phpMyAdmin</span>
                     </div>
                 </div>
-                <h3 data-key="projects-skills-title">Skills</h3>
+                <h3 data-key="projects-skills-title">Compétences</h3>
                 <ul>
                     <li data-key="project-12-skill-1">Gestion de projet</li>
                     <li data-key="project-12-skill-2">Travail en équipe</li>
                     <li data-key="project-12-skill-3">Développement d'un projet avec une architechture MVC</li>
                 </ul>
-                <h3 data-key="projects-result-title">Result</h3>
+                <h3 data-key="projects-result-title">Résultat</h3>
                 <div class="image-container">
                     <figure onclick="displayPicture(event)"><img src="Images/s3011.png"><figcaption data-key="project-12-img-1">Page d'accueil</figcaption></figure>
                     <figure onclick="displayPicture(event)"><img src="Images/s3012.png"><figcaption data-key="project-12-img-2">Gestion et affichage des rencontres</figcaption></figure>
                     <figure onclick="displayPicture(event)"><img src="Images/s3013.png"><figcaption data-key="project-12-img-3">Génération du championnat</figcaption></figure>
                 </div>
             </div>
-            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Lire plus</button>
         </div>
         <!--   Projet 11    -->
         <div class="project-perso">
-            <h2 data-key="project-11-title"></h2>
-            <p class="date"><span data-key="month-12"></span> 2024</p>
+            <h2 data-key="project-11-title">Création d'une application web de gestion de sites favoris</h2>
+            <p class="date"><span data-key="month-12">Décembre</span> 2024</p>
             <p class="description" data-key="project-11-description">
+                Développement d'un tableau de bord pour facilement accéder, gérer et organiser des sites web favoris.
             </p>
             <div class="more-text-closed">
                 <h3 data-key="projects-specifications-title">Specifications</h3>
                 <ul>
-                    <li data-key="project-11-spec-1"></li>
-                    <li data-key="project-11-spec-2"></li>
-                    <li data-key="project-11-spec-3"></li>
-                    <li data-key="project-11-spec-4"></li>
+                    <li data-key="project-11-spec-1">Gestion et affichage de liens hypertexte</li>
+                    <li data-key="project-11-spec-2">Gestion et affichage de catégories</li>
+                    <li data-key="project-11-spec-3">Gestion de la personnalisation de l'application</li>
+                    <li data-key="project-11-spec-4">Programmation d'un script de lancement d'application</li>
                 </ul>
-                <h3 data-key="projects-tools-title">Tools</h3>
+                <h3 data-key="projects-tools-title">Outils</h3>
                 <div class="tools-container">
                     <div class="tool">
                         <img src="Images/vuejs.png">
@@ -521,33 +527,34 @@
                         <span>Flask</span>
                     </div>
                 </div>
-                <h3 data-key="projects-skills-title">Skills</h3>
+                <h3 data-key="projects-skills-title">Compétences</h3>
                 <ul>
-                    <li data-key="project-11-skill-1"></li>
-                    <li data-key="project-11-skill-2"></li>
-                    <li data-key="project-11-skill-3"></li>
-                    <li data-key="project-11-skill-4"></li>
+                    <li data-key="project-11-skill-1">Programmation avec un frammework JavaScript</li>
+                    <li data-key="project-11-skill-2">Création d'API</li>
+                    <li data-key="project-11-skill-3">Structuration de projet</li>
+                    <li data-key="project-11-skill-4">Qualité de code</li>
                 </ul>
-                <h3 data-key="projects-result-title">Result</h3>
+                <h3 data-key="projects-result-title">Résultat</h3>
                 <div class="image-container">
-                    <figure onclick="displayPicture(event)"><img src="Images/mywebdb1.png"><figcaption data-key="project-11-img-1"></figcaption></figure>
-                    <figure onclick="displayPicture(event)"><img src="Images/mywebdb2.png"><figcaption data-key="project-11-img-2"></figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/mywebdb1.png"><figcaption data-key="project-11-img-1">Page d'accueil de l'application.</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/mywebdb2.png"><figcaption data-key="project-11-img-2">Mode de personnalisation de l'application.</figcaption></figure>
                 </div>
             </div>
-            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Lire plus</button>
         </div>
         <!--   Projet 6    -->
         <div class="project">
             <h2 data-key="project-6-title">Création d’une base de données</h2>
-            <p class="date"><span data-key="month-1"></span> 2024</p>
+            <p class="date"><span data-key="month-1">Janvier</span> 2024</p>
             <p class="description" data-key="project-6-description">
+                Conception et déploiement d'une base de données SQL selon le besoin d'un client.
             </p>
             <div class="more-text-closed">
                 <h3 data-key="projects-specifications-title">Specifications</h3>
                 <ul>
                     <li data-key="project-6-spec-1">Réalisation d’une base de données en fonction d’un cahier des charges</li>
                 </ul>
-                <h3 data-key="projects-tools-title">Tools</h3>
+                <h3 data-key="projects-tools-title">Outils</h3>
                 <div class="tools-container">
                     <div class="tool">
                         <img src="Images/sql.png">
@@ -562,7 +569,7 @@
                         <span>Microsoft SQL server management</span>
                     </div>
                 </div>
-                <h3 data-key="projects-skills-title">Skills</h3>
+                <h3 data-key="projects-skills-title">Compétences</h3>
                 <ul>
                     <li data-key="project-6-skill-1">Etude d’un besoin client</li>
                     <li data-key="project-6-skill-2">Realisation de MCD et MLD pertinents (ACSI)</li>
@@ -570,26 +577,27 @@
                     <li data-key="project-6-skill-4">Maitrise des requêtes et sous-requêtes sql et du LDD</li>
                     <li data-key="project-6-skill-5">Gestion des privilèges utilisateur</li>
                 </ul>
-                <h3 data-key="projects-result-title">Result</h3>
+                <h3 data-key="projects-result-title">Résultat</h3>
                 <div class="image-container">
                     <figure onclick="displayPicture(event)"><img src="Images/mcd.png"><figcaption data-key="project-6-img-1">Le MCD de la base de données</figcaption></figure>
                 </div>
             </div>
-            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Lire plus</button>
         </div>
         <!--   Projet 9   -->
         <div class="project">
-            <h2 data-key="project-9-title"> </h2>
-            <p class="date"><span data-key="month-10"></span> 2024</p>
+            <h2 data-key="project-9-title">Implémentation et test d'une structure de donnée</h2>
+            <p class="date"><span data-key="month-10">Octobre</span> 2024</p>
             <p class="description" data-key="project-9-description">
+                L'objectif était d'implémenter une structure de données permettant de stocker des entiers sans doublon, et de mesurer ses performances dans différents langages de programmation.
             </p>
             <div class="more-text-closed">
                 <h3 data-key="projects-specifications-title">Specifications</h3>
                 <ul>
-                    <li data-key="project-9-spec-1"></li>
-                    <li data-key="project-9-spec-2"></li>
+                    <li data-key="project-9-spec-1">Implémentation d'une structure de données</li>
+                    <li data-key="project-9-spec-2">Réalisation et analyse de benchmarks</li>
                 </ul>
-                <h3 data-key="projects-tools-title">Tools</h3>
+                <h3 data-key="projects-tools-title">Outils</h3>
                 <div class="tools-container">
                     <div class="tool">
                         <img src="Images/C.png">
@@ -608,24 +616,24 @@
                         <span>Matplotlib</span>
                     </div>
                 </div>
-                <h3 data-key="projects-skills-title">Skills</h3>
+                <h3 data-key="projects-skills-title">Compétences</h3>
                 <ul>
-                    <li data-key="project-9-skill-1"></li>
-                    <li data-key="project-9-skill-2"></li>
+                    <li data-key="project-9-skill-1">Optimisation et analyse de code</li>
+                    <li data-key="project-9-skill-2">Structuration de projet</li>
                 </ul>
-                <h3 data-key="projects-result-title">Result</h3>
+                <h3 data-key="projects-result-title">Résultat</h3>
                 <div class="image-container">
-                    <figure onclick="displayPicture(event)"><img src="Images/benchmarkBuild.png"><figcaption data-key="project-9-img-1"></figcaption></figure>
-                    <figure onclick="displayPicture(event)"><img src="Images/benchmarkInsert.png"><figcaption data-key="project-9-img-2"></figcaption></figure>
-                    <figure onclick="displayPicture(event)"><img src="Images/benchmarkRemove.png"><figcaption data-key="project-9-img-3"></figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/benchmarkBuild.png"><figcaption data-key="project-9-img-1">Temps d'exécution et allocation de mémoire lors de la création de la structure.</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/benchmarkInsert.png"><figcaption data-key="project-9-img-2">Maintenant lors de insertion de valeurs.</figcaption></figure>
+                    <figure onclick="displayPicture(event)"><img src="Images/benchmarkRemove.png"><figcaption data-key="project-9-img-3">Et enfin lors de la suppression de valeurs.</figcaption></figure>
                 </div>
             </div>
-            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Read more</button>
+            <button class="read-more" onclick="toggleReadMore(event)" data-key="read-more">Lire plus</button>
         </div>
     </section>
     <!-- Contact -->
     <section id="contact">
-        <h1 data-key="contact-title">Contact</h1>
+        <h1 data-key="contact-title">Contacter</h1>
         <p>Email: <a href="mailto:faustin.montant33@gmail.com" target="_blank" rel="noreferrer noopener">faustin.montant33@gmail.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/faustin-montant-43a790312" target="_blank" rel="noreferrer noopener">https://linkedin.com/in/faustin-montant-43a790312</a></p>
         <p>GitHub: <a href="https://github.com/FofoIsOnInternet" target="_blank" rel="noreferrer noopener">https://github.com/FofoIsOnInternet</a></p>
